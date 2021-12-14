@@ -1,0 +1,203 @@
+body
+{
+    margin: 0;
+}
+
+header
+{
+    display: flex;
+    background-color: #f5c04c;
+    max-width: auto;
+    min-height: 5vh;
+}
+
+form
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 50vw;
+    min-height: 30vh;
+    box-shadow: 6px 20px 10px black;
+    padding: 1em;
+    background-color: coral;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-color: #8a9ab8;
+    margin-top: 1em;
+
+}
+
+td
+{
+    display: inline-block;
+    padding: 20px;
+}
+
+input
+{
+    padding: 10px;
+}
+
+.navprincipal
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("ImagenNavAvionFondo.jpg");
+}
+
+body
+{
+    font-family: sans-serif;
+}
+
+.botonRedondo
+{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color: yellow;
+}
+
+section
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color:#9FBDF5;
+    min-height: 50vh;
+    max-width: auto;
+}
+
+
+article
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+h1
+{
+    font-family: Arial;
+    color: darkslategray;
+    margin: 3em;
+    text-align: center;
+}
+
+.paragrafocolumna
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 1em;
+}
+
+p
+{
+    font-family: Arial;
+}
+
+footer
+{
+    display: flex;
+    background-color: #8A9AB8;
+    max-width: auto;
+    min-height: 10vh;
+    justify-content: center;
+}
+
+
+.tarjeta
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    background-color: white;
+    margin-bottom: 2em;
+    border-bottom-left-radius: 2em;
+    border-bottom-right-radius: 2em;
+    border-top-right-radius: 2em;
+    border-top-right-radius: 2em;
+}
+
+.tarjetaSolitaria
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    background-color: white;
+    max-width: 22.4vw;
+    min-height: 14vh;
+    margin-bottom: 2em;
+    border-bottom-left-radius: 2em;
+    border-bottom-right-radius: 2em;
+    border-top-right-radius: 2em;
+    border-top-right-radius: 2em;
+}
+
+.AgruparTarjetas
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.ConjuntosTarjetas
+{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.imgTarjetaDerecha
+{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-right: 1em;
+}
+
+.navheader
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #f5c04c;
+    max-width: 20vw;
+    min-height: 10vh;
+    padding-left: 5em;
+}
+
+.casillamenu
+{
+    display: flex;
+    align-items: center;
+    max-width: 20vw;
+    min-height: 10vh;
+    padding: 20px;
+    margin: 5px;
+    background-color: blanchedalmond
+    
+}
+
+
+
+@media screen and (max-width: 340px){
+
+                .AgruparTarjetas
+                {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                }
+
+                body
+                {
+                    margin: 0;
+                }
+}

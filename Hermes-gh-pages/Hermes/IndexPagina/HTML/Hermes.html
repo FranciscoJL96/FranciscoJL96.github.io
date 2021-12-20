@@ -15,80 +15,70 @@
         <header>
             <div class="fondo">
                 <a class="logotipo" title="Página web Hermes" href="../HTML/Hermes.html">
-                  <img src="../Imagenes/Logotipo Hermes.png" alt="Compañía de viajes Hermes" width="140px" height="140px">
+                  <img src="../Imagenes/Logotipo.png" alt="Compañía de viajes Hermes" width="140" height="140">
                   <h1>HERMES</h1>
                 </a>
                 <nav>
                     <ul>
-                      <li><a href="../../Listado de vuelos/ListaDoVuelos.html">Vuelos</a></li>  
-                      <li><a href="../../BusquedaAlojamiento/HTML/BusquedaAlojamiento.html">Hoteles</a></li>
+                      <li><a href="#">Vuelos</a></li>  
+                      <li><a href="#">Hoteles</a></li>
                       <li><a href="#">Coches</a></li>
                       <li><a href="#">Taxis</a></li>
-                      <li><a href="../../ListadoActividades/ListadoActividades.html">Actividades</a></li>
+                      <li><a href="#">Actividades</a></li>
                     </ul>
                 </nav>
-                <form>
+                <section id="formulario">
+                  <form>
                     <div>
-                        <label><b>Destino </b></label> 
-                        <input type="text" required/>
-                      </div>
-                      <div>
-                        <label><b>Fecha Salida </b></label>
-                        <input type="date"/>
-                      </div>
-                      <div>
-                        <label><b>Fecha Vuelta </b></label>
-                        <input type="date"/>
-                      </div>
-                      <div>
-                        <label><b>Num. Personas </b></label>
-                        <input type="number"/>
-                      </div>
-                      <div>
-                        <select name="OS">
-                           <option selected value="0"> Servicio deseado </option>
-                              <optgroup label="Desplazamiento"> 
-                              <option value="1">Avión</option> 
-                              <option value="2">Tren</option> 
-                              <option value="3">Barco</option> 
-                              <option value="3">Autobus</option>
-                              <optgroup label="Alojamiento"> 
-                              <option value="1">Hotel</option> 
-                              <option value="2">Hostal</option> 
-                              <option value="3">Apartamento</option> 
-                           </optgroup> 
-                        </select>
-                      </div>
-                      <div id="centerBut">
-                        <input type="submit" value="Buscar" class="boton"/>
-                      </div>
-                      <div>
-                        <input type="reset" value="Eliminar busqueda"/>
-                      </div>
-                </form>
+                      <label><b>Destino </b></label> 
+                      <input type="text" required placeholder="¿A donde quieres ir?"/>
+                    </div>
+                    <div>
+                      <label><b>Fecha Salida </b></label>
+                      <input type="date"/>
+                    </div>
+                    <div>
+                      <label><b>Fecha Vuelta </b></label>
+                      <input type="date"/>
+                    </div>
+                    <div>
+                      <label><b>Num. Personas </b></label>
+                      <input type="number" placeholder="¿Cantidad de personas?"/>
+                    </div>
+                    <div>
+                      <select name="OS">
+                         <option selected value="0"> Servicio deseado </option>
+                            <optgroup label="Desplazamiento"> 
+                            <option value="1">Avión</option> 
+                            <option value="2">Tren</option> 
+                            <option value="3">Barco</option> 
+                            <option value="3">Autobus</option>
+                            <optgroup label="Alojamiento"> 
+                            <option value="1">Hotel</option> 
+                            <option value="2">Hostal</option> 
+                            <option value="3">Apartamento</option> 
+                         </optgroup> 
+                      </select>
+                    </div>
+                    <div id="centerBut">
+                      <input type="submit" value="Buscar" class="boton"/>
+                    </div>
+                    <div>
+                      <input type="reset" value="Eliminar busqueda" class="boton"/>
+                    </div>
+                  </form>
+                </section>
             </div>
         </header>
-        <!---
-        <section>
-
-        </section>
-        -->
         <footer>
-            <div>
-              <p>Oferta1</p>
+          <section id="promocion">
+            <div class="oferta imagen">
+              <p>OFERTAS</p>
             </div>
-            <div>
-              <p>Oferta2</p>
-            </div>
-            <div>
-              <p>Oferta3</p>
-            </div>
-            <div>
-              <p>Oferta4</p>
-            </div>
-            <div class="Dominio">
-              <p>Carles Rosell Garrido 1 DAM A &#169</p>
-            </div>
+          </section>
+          <div class="dominio">
+            <p>Carles Rosell Garrido 1 DAM A &#169;</p>
+          </div>
         </footer>
     </main>
 </body>

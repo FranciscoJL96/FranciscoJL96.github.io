@@ -11,11 +11,12 @@ body
 
     font-family: 'Open Sans', sans-serif;
     font-family: 'Readex Pro', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 header
 {
-    min-width: 100vw;
+    max-width: 100vw;
     min-height: 75vh;
 
     display: inline-block;
@@ -35,27 +36,19 @@ header
 {
     background-image: url("../Imagenes/DiaNY.jpg");
     background-color: #ab925c;
-    min-width: 100vh;
-    min-height: 75vh;
-    /*text-align: center;*/
+    
+    min-width: 100vw;
+    min-height: 75vh; 
+
 	background-position: center center;
 	background-size: cover;
 	background-repeat: no-repeat;
 	position: relative;
-}
-
-/*
-section
-{
-    max-width: 100vw;
-    min-height: 10vh;
-    background-color: #7daaff;
-}
-*/
+}   
 
 footer
 {
-    max-width: 300vw;
+    max-width: 100vw;
     min-height: 25vh;
 
     background-color: #8a9ab8;
@@ -63,25 +56,56 @@ footer
     display: flex;
 }
 
-footer div p
-{
-  margin: 0;
-  padding: 0;
-
-  font-size: 15px;
-}
-
-footer div
-{
-    flex-grow: 1;
-}
-
-footer div:last-child
+.dominio
 {
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
-    flex-grow: 0;
+    flex-grow: 1;
+
+    padding-right: 10px;
+    color: black;
+    font-size: 15px;
+}
+
+#promocion, .dominio
+{
+    border-top: 2px solid #9fbdf5;
+}
+
+#promocion
+{
+    max-height: 25vh;
+    flex-grow: 5;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.oferta
+{
+    border: 2px solid #9fbdf5;
+    border-radius: 20px;
+    flex-grow: 1;
+
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    font-size: 26px;
+    background-position: center center;
+	background-size: cover;
+    animation-name: carusel;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes carusel
+{
+    0%   {background-image: url("../Imagenes/OfertaParis.jpg");}
+    25%  {background-image: url("../Imagenes/OfertaOsaka.jpg");}
+    50%  {background-image: url("../Imagenes/OfertaPraga.jpg");}
+    75%  {background-image: url("../Imagenes/OfertaSantorini.jpg");}
+    100% {background-image: url("../Imagenes/OfertaParis.jpg");}
 }
 
 img
@@ -109,8 +133,6 @@ li
     flex-basis: 80px;
 
     font-size: 15px;
-
-    transition:all .3s ease-in-out;
 }
 
 li:last-child
@@ -131,6 +153,8 @@ a
     text-decoration: none;
     color: white;
 
+    transition:all .3s ease-in-out;
+
     padding: 10px;
 }
 
@@ -142,13 +166,34 @@ a
     margin-left: 10px;
 }
 
+#formulario
+{
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+}
 
 form
 {
-    display: flex;
-    flex-direction: column;
+    position: relative;
 
-    align-items: center;
+    display: flex;
+    flex-direction: row;
+
+    border-radius: 15px;
+    background-color: #ab925c;
+
+    padding: 10px;
+}
+
+.boton
+{
+    flex-grow: 0.7;
+    height: 7vh;
+    border-radius: 30px;
+
+    background-color: #f5c04c;
 }
 
 form div
@@ -157,10 +202,15 @@ form div
     position: relative;
 
     display: flex;
-    flex-direction: column;
-    /*align-items: center;*/
-    width: 20vw;
-    /*flex-basis: 5px;*/
+    text-align: center;
+}
+
+label
+{
+    display: flex;
+    align-items: center;
+    padding-right: 10px;
+    padding-left: 10px;
 }
 
 h1
@@ -170,4 +220,79 @@ h1
     margin: 0;
     display: flex;
     align-items: center;
+}
+
+@media screen and (max-width: 1300px) 
+{
+    #formulario form div
+    {
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 980px) 
+{
+    #formulario 
+    {
+        margin-top: 20px;
+    }
+
+    #formulario form
+    {
+        display:inline;
+    }
+
+    #formulario form div 
+    {
+        padding-top: 5px;
+    }
+
+    #formulario form div:nth-child(5), #formulario form div:nth-child(6), #formulario form div:nth-child(7)
+    {
+        display: flex;
+        justify-content: center;
+    }
+
+    nav ul li
+    {
+        flex-grow: 1;
+    }
+}
+
+@media screen and (max-width: 720px)
+{
+    .fondo
+    {
+        background: url("../Imagenes/AtardecerNY.jpg");
+        background-position: center center;
+	    background-size: cover;
+	    background-repeat: no-repeat;
+	    position: relative;
+    }
+    
+    .logotipo
+    {
+        display: flex;
+        justify-content: center;
+        margin-top: 0px;
+    }
+
+    .logotipo h1
+    {
+        display: none;
+    }
+
+    footer
+    {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 450px) 
+{
+    nav ul
+    {
+        gap: 0;
+        padding-left: 0px;
+    }
 }
